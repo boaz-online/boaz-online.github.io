@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SQLime / 關於 About</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="SQLime" />
+    <meta property="og:title" content="SQLime — Online SQLite playground" />
+    <meta name="description" content="SQLime is an online SQLite playground for debugging and sharing SQL snippets.">
+    <meta property="og:description"
+        content="SQLime is an online SQLite playground for debugging and sharing SQL snippets." />
+    <meta property="og:url" content="https://sqlime.org/about.html" />
+    <meta property="og:image" content="https://sqlime.org/img/cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="stylesheet" href="css/awsm.css">
+    <style>
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logo img {
+            display: inline-block;
+            width: 1.5rem;
+            height: auto;
+        }
+
+        table th {
+            border-right: 0;
+            font-weight: normal;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a class="logo" href="javascript:back()">
+                <img src="./img/favicon-64x64.png">
+            </a>
+            關於 About SQLime
+        </h1>
+    </header>
+    <main>
+        <article>
+            <p><strong><a href="./">SQLime</a></strong> 是一個在線 SQLite 操練場
+                 用於調試和共享 SQL 片段。 有點像 JSFiddle，但是是對於 SQL 而不是針對 JavaScript。		
+            </p>				 
+            <p><strong><a href="./">SQLime</a></strong> is an online SQLite playground
+                for debugging and sharing SQL snippets. Kinda like JSFiddle,
+                but for SQL instead of JavaScript.
+            </p>
+            <p><img src="img/sqlime.jpg"></p>
+            <p>以下是一些顯著的特點： Here are some notable features:</p>
+
+            <h5>🔋 瀏覽器中的成熟數據庫 Full-blown database in the browser</h5>
+            <p> SQLime 由最新版本的 SQLite 提供支持，採用版本是優秀的
+			    <a href="https://github.com/sql-js/sql.js/">sql.js</a> 項目。
+			    SQLime is backed by the latest version of SQLite, provided by an excellent
+                <a href="https://github.com/sql-js/sql.js/">sql.js</a> project.
+				它提供了一個功能齊全的 SQL 實現，包括索引、觸發器、
+                瀏覽、執行、CTE、窗口函數和執行計劃。
+                It provides a full-featured SQL implementation, including indexes, triggers,
+                views, transactions, CTEs, window functions and execution plans.
+            </p>
+
+            <h5>🔌 連接任何數據源 Connect any data source</h5>
+            <p>連接任何本地或遠程 SQLite 數據庫。Connect any local or remote SQLite database. 同時支持文件 和 超連接 URL
+                 Both files and URLs
+                are supported. 例如，嘗試加載 For example, try loading the
+                <a
+                    href="./#https://raw.githubusercontent.com/nalgeon/sqliter/main/employees.en.db">員工數據庫 Employees database</a>
+                來自 GitHub 存儲庫。from the GitHub repo.
+            </p>
+
+            <h5>🔗 保存並與他人分享 Save and share with others</h5>
+            <p>SQLime 將數據庫和查詢都保存到 GitHub
+                 以便您以後可以重新訪問它們或與同事分享它們。
+                 數據庫存儲為純文本 SQL 轉儲，因此很容易
+                 讀取代碼或將數據導入 PostgreSQL、MySQL、
+                 或其他數據庫。</p>			
+            <p>SQLime saves both the database and the queries to GitHub
+                so that you can revisit them later or share them with a colleague.
+                The database is stored as a plain text SQL dump, so it's easy to
+                read the code or import data into PostgreSQL, MySQL,
+                or other databases.</p>
+            <p>例如，這裡是 For example, here is the
+                <a href="https://gist.github.com/nalgeon/e012594111ce51f91590c4737e41a046">gist</a>
+                對於員工數據庫 for the Employees database, 這是它的 and here is the
+                <a href="./#gist:e012594111ce51f91590c4737e41a046">分享鏈接 sharing link</a> for it.
+            </p>
+
+            <h5>📱 移動友好 Mobile friendly</h5>
+            <p>  大多數操練場不適合小屏幕。 SQLime
+                 是專門在移動設備上設計和測試的。
+				 Most playgrounds are not meant for small screens. SQLime
+                was specifically designed and tested on mobile devices.</p>
+            <figure>
+                <img src="img/mobile.jpg">
+                <figcaption>無需縮放或瞄準小按鈕，一切
+                     外觀和工作都很好。No need to zoom or aim at tiny buttons — everything
+                    looks and works just fine.</figcaption>
+            </figure>
+
+            <h5>🔒 安全且私密 Secure and private</h5>
+            <p>沒有服務器。 SQLime 完全在瀏覽器中運行。
+                 GitHub API 令牌也存儲在本地。 查詢是
+                 在您的帳戶中保存為私有 GitHub gists。
+                 您的數據只屬於您。
+				 There is no server. SQLime works completely in the browser.
+                The GitHub API token is also stored locally. Queries are
+                saved as private GitHub gists within your account.
+                Your data is yours only.</p>
+
+            <h5>⌨️ 極為簡單 Dead simple</h5>
+            <p>  除了 SQLite (sql.js)，SQLime 的第三方依賴項為零。
+                 傳統的 HTML、CSS 和 vanilla JS——僅此而已。
+                 沒有框架，沒有繁重的編輯器，沒有過時和易受攻擊的庫。
+
+			    SQLime has zero third-party dependencies other than SQLite (sql.js).
+                Good old HTML, CSS, and vanilla JS — that's all.
+                No frameworks, no heavy editors, no obsolete and vulnerable libraries.
+                只是一些模塊				
+                Just some modular
+                <a href="https://github.com/nalgeon/sqlime">開放源碼 open-source code</a>,
+                易於掌握和擴展 which is easy to grasp and extend.
+            </p>
+
+            <h3>鍵盤快捷鍵 Keyboard shortcuts</h3>
+            <table>
+                <tr>
+                    <th>win</th>
+                    <th>mac</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td><code>⌃↵</code></td>
+                    <td><code>⌘↵</code></td>
+                    <td>運行查詢 run query</td>
+                </tr>
+                <tr>
+                    <td><code>⌃O</code></td>
+                    <td><code>⌘O</code></td>
+                    <td>打開文件 open file</td>
+                </tr>
+                <tr>
+                    <td><code>⌃U</code></td>
+                    <td><code>⌘U</code></td>
+                    <td>打開網址 open url</td>
+                </tr>
+                <tr>
+                    <td><code>⌃S</code></td>
+                    <td><code>⌘S</code></td>
+                    <td>保存並分享 save and share</td>
+                </tr>
+                <tr>
+                    <td><code>⌃/</code></td>
+                    <td><code>⌘/</code></td>
+                    <td>顯示表格 show tables</td>
+                </tr>
+            </table>
+
+            <p><a href="javascript:back()">← 返回back</a></p>
+        </article>
+    </main>
+    <script>
+        function back() {
+            if (document.referrer) {
+                history.go(-1);
+            } else {
+                location.assign("./");
+            }
+        }
+    </script>
+</body>
+
+</html>

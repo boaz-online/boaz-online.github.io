@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SQLime / 設置 Settings</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="stylesheet" href="css/awsm.css">
+</head>
+
+<body>
+    <header>
+        <h1>設置 Settings</h1>
+    </header>
+    <main>
+        <article>
+            <form id="settings">
+                <p>提供您的 GitHub 憑據以啟用共享。Provide your GitHub credentials to enable sharing.</p>
+                <fieldset>
+                    <legend>GitHub 憑據 credentials</legend>
+                    <label for="username">使用者名稱 Username</label>
+                    <input id="username" type="text">
+                    <label for="username">API 令牌 token</label>
+                    <input id="token" type="text">
+                    <p> 這<strong>不是</strong>您的 GitHub 密碼。
+                        This is <strong>not</strong> your GitHub password.
+                        生成 API 令牌在 Generate an API token in
+                        <a href="https://github.com/settings/tokens" target="_blank">GitHub 設置 settings</a>
+                        運用'gist'範圍。 with 'gist' scope.
+                    </p>
+                </fieldset>
+            </form>
+            <p><a href="javascript:history.go(-1)">← 返回 back</a></p>
+        </article>
+    </main>
+    <script type="module" src="js/settings.js"></script>
+</body>
+
+</html>
